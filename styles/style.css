@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100vh;
+}
+
+body{
+
+    background-image: url("/img/background-gray.PNG");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.header a{
+    color: black;
+    font-family: algerial;
+    text-decoration: none;
+    font-weight: 900;
+}
+.header a spam{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: medium;
+}
+.header .nav-menu li{
+    display: inline;
+    padding: 5px;
+}
+.header .nav-menu a{
+    font-family: monospace;
+    font-weight: 100;
+    font-style: italic;
+    font-size: larger;
+}
+
+.container{
+    display: block;
+    margin-top: 35vh;
+    text-align: center;
+}
+.container .sub{
+    color: black;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    min-height: 100%;
+    text-transform: uppercase;
+}
+.container .album-name{
+    text-transform: uppercase;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    min-height: 100%;
+    margin-bottom: 15px;
+}
+.container a{
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgb(180, 155, 12);
+    color:rgb(180, 155, 12);
+    padding: 5px 15px 5px 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
