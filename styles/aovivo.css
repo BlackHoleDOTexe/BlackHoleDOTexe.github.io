@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -57,43 +60,28 @@ body{
 }
 
 .container{
-    display: block;
-    margin-top: 35vh;
-    text-align: center;
+    margin: 5vh;
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 2px 2px 4px black;
 }
-.container .sub{
-    color: black;
-    font-family: 'Noto Sans Buhid', sans-serif;
-    font-weight: 100;
-    font-size: 24px;
-    min-height: 100%;
+
+.container h1{
+    padding: 20px 20px 20px 0px;
+    margin-top: 50px;
+    font-size: 3vh;
+    margin-left: 2%;
+    font-family: 'Poiret One', cursive;
+    color: rgb(221, 221, 221);
     text-transform: uppercase;
 }
-.container .album-name{
-    text-transform: uppercase;
-    font-family: 'Noto Sans Buhid', sans-serif;
-    font-weight: 100;
-    font-size: 50px;
-    min-height: 100%;
-    margin-bottom: 15px;
-}
-.container a{
-    display: inline;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid rgb(180, 155, 12);
-    color:rgb(180, 155, 12);
-    padding: 5px 15px 5px 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+.container h3{
+    color: rgb(221, 221, 221);
+    margin-left: 2%;
     font-family: sans-serif;
-    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
 }
-.container a:hover{
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+
 footer{
     position: fixed;
     bottom: 0;
