@@ -1,11 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
 html,body{
     height: 100vh;
 }
@@ -14,88 +7,119 @@ body{
 
     background-image: url("/img/background-gray.PNG");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
-    overflow: hidden;
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+.content{
+    padding: 3vh;
 }
 
-.header a{
-    color: black;
-    font-family: algerial;
-    text-decoration: none;
-    font-weight: 900;
-}
-.header a spam{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    font-size: medium;
-}
-.header a:hover{
-    font-size: 20px;
-    margin-top: -10px;
-}
-.header .nav-menu li{
-    display: inline;
-    padding: 10px;
-}
-.header .nav-menu a{
-    font-family: monospace;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 16px;
-}
-.header .nav-menu a:hover{
-    text-shadow: 0px 0px 8px rgb(160, 160, 160);
-    font-weight: bolder;
-}
-
-.container{
-    margin: 5vh;
-    background-color: rgba(0, 0, 0, 0.637);
-    box-shadow: 2px 2px 4px black;
-}
-
-.container h1{
+.event-list h1{
     padding: 20px 20px 20px 0px;
     margin-top: 50px;
-    font-size: 3vh;
+    font-size: 30px;
     margin-left: 2%;
     font-family: 'Poiret One', cursive;
     color: rgb(221, 221, 221);
     text-transform: uppercase;
-}
-.container h3{
-    color: rgb(221, 221, 221);
-    margin-left: 2%;
-    font-family: sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
+    text-align: center;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
+.event-list{
+    max-width: 80vw;
+    min-height: 70vh;
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 2px 2px 4px black;
+    margin: 0 auto;
+}
+
+.header-event-list{
+    display: flex;
+    padding: 5px 0;
+    list-style-type: none;
+    color:rgb(221, 221, 221);
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-data{
+    width: 85px;
     text-align: center;
-    background-color: black;
+}
+.header-event{
+    width: 85px;
+    text-align: center;
+}
+.header-local{
+    width: 200px;
+    text-align: center;
+}
+.header-city{
+    width: 120px;
+    text-align: center;
+}
+
+/*agenda completa css*/
+.agenda-completa{
     color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
 }
-footer h6{
-    padding: 3px;
+.event-data{
+    width: 85px;
+    height: auto;
+    padding: 5px;
 }
-footer h6 a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: sans-serif;
-    font-weight: 100;
+.event-info{
+
+    width: 85px;
+    height: auto;
+    padding: 5px;
+}
+.event-local{
+
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+.event-city{
+
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    
+}
+
+@media screen and (max-width:620px){
+    hr{
+        display: none;
+    }
+    .event-list h1{
+        padding: 15px 15px 15px 0px;
+        margin-top: 30px;
+        font-size: 22px;
+        margin-left: 1%;
+    }
+    .event-list{
+        max-width: 80vw;
+        min-height: 75vh;
+    }
+    .header-event-list{
+        display: none;
+    }
+    .agenda-completa{
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .event-data , .event-info , .event-local , .event-city{
+        width: 100%;
+    }
 }
