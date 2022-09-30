@@ -5,7 +5,7 @@ html,body{
 
 body{
 
-    background-image: url("/img/background-gray.PNG");
+    background-image: url("/img/background-colored.PNG");
     background-repeat: no-repeat;
     background-size:cover;
     min-height: 100vh;
@@ -17,20 +17,25 @@ body{
     text-align: center;
 }
 .container .sub{
-    color: black;
-    font-family: 'Noto Sans Buhid', sans-serif;
-    font-weight: 100;
-    font-size: 24px;
+    color: var(--content-color);
+    text-shadow: 0 0 10px black;
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+    font-size: 32px;
     min-height: 100%;
     text-transform: uppercase;
+    margin: 20px 0;
 }
 .container .album-name{
+    color: var(--content-color);
+    text-shadow: 0 0 10px black;
     text-transform: uppercase;
-    font-family: 'Noto Sans Buhid', sans-serif;
-    font-weight: 100;
-    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+    font-size: 56px;
     min-height: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+
 }
 .container a{
     display: inline;
@@ -45,7 +50,20 @@ body{
     font-size: 16px;
 }
 .container a:hover{
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: black;
+    border: 2px solid black;
+}
+
+
+@media screen and (max-width:620px){
+    .container .sub{
+        font-size: 24px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .container .album-name{
+        font-size: 50px;
+        margin-left: 30px;
+        margin-right: 30px;  
+    }
 }

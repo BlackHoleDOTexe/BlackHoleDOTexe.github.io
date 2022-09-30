@@ -5,7 +5,7 @@ html,body{
 
 body{
 
-    background-image: url("/img/background-gray.PNG");
+    background-image: url("/img/background-colored.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ body{
     font-size: 30px;
     margin-left: 2%;
     font-family: 'Poiret One', cursive;
-    color: rgb(221, 221, 221);
+    color: var(--color-primary);
     text-transform: uppercase;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body{
 .event-list{
     max-width: 80vw;
     min-height: 70vh;
-    background-color: rgba(0, 0, 0, 0.637);
+    background: var(--content-color);
     box-shadow: 2px 2px 4px black;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ body{
     display: flex;
     padding: 5px 0;
     list-style-type: none;
-    color:rgb(221, 221, 221);
+    color: var(--color-primary);
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -49,7 +49,7 @@ body{
     text-align: center;
 }
 .header-event{
-    width: 85px;
+    width: 160px;
     text-align: center;
 }
 .header-local{
@@ -63,9 +63,10 @@ body{
 
 /*agenda completa css*/
 .agenda-completa{
-    color: white;
+    color: black;
     font-family: 'Poiret One', cursive;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 16px;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -78,7 +79,7 @@ body{
 }
 .event-info{
 
-    width: 85px;
+    width: 160px;
     height: auto;
     padding: 5px;
 }
@@ -97,9 +98,6 @@ body{
 }
 
 @media screen and (max-width:620px){
-    hr{
-        display: none;
-    }
     .event-list h1{
         padding: 15px 15px 15px 0px;
         margin-top: 30px;
@@ -121,5 +119,9 @@ body{
     }
     .event-data , .event-info , .event-local , .event-city{
         width: 100%;
+    }
+
+    .agenda-completa{
+        font-size: 12px;
     }
 }
